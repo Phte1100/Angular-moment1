@@ -2,10 +2,28 @@
 
 <p>Här kan du välja att konvertera Celsius till Farenheit eller vice versa.</p> 
 
-
-<div>
-  <input type="number" [(ngModel)]="celsius" placeholder="Ange temperatur i Celsius">
-  <p *ngIf="celsius !== null">{{ celsius }} Celsius är {{ convertToFahrenheit() }} Fahrenheit.</p>
+<div id="temperatur">
+<div id="cels">
+  <input type="number" [(ngModel)]="celsius" placeholder="Ange temperatur i &deg;C">
+  <p *ngIf="celsius !== null">{{ celsius }} &deg;C är {{ convertToFahrenheit() }} &deg;F</p>
 </div>
+
+<div id="far">
+  <input type="number" [(ngModel)]="fahrenheit" placeholder="Ange temperatur i &deg;F">
+  <p *ngIf="fahrenheit !== null">{{ fahrenheit }} &deg;F är {{ convertToCelsius() }} &deg;C.</p>
+</div>
+</div>
+<br>
+<p>Här kan du välja att konvertera meter till feet eller vice versa.</p>
+<div id="temperatur">
+  <div id="cels">
+    <input type="number" [(ngModel)]="meter" placeholder="Ange längd i meter">
+    <p *ngIf="meter !== null">{{ meter }} meter är {{ convertToFeet() }} feet</p>
+  </div>
   
+  <div id="far">
+    <input type="number" [(ngModel)]="feet" placeholder="Ange längd i feet">
+    <p *ngIf="feet !== null">{{ feet }} feet är {{ convertToMeter() }} meter</p>
+  </div>
+  </div>
   

@@ -8,3 +8,14 @@ h1 {
     font-weight: 200;
     margin-top: 3%;
 }
+
+main {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+p, input {
+    font-size: 16px;
+    font-family: "open sans";
+}

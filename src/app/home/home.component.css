@@ -8,3 +8,17 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+#temperatur {
+  display: flex;
+  flex-direction: row;
+  width: 445px;
+}
+
+#cels, #far {
+  position: relative;
+  width: 90%;
+  justify-content: center;
+  margin: 5%;
+
+}
