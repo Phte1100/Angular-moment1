@@ -1,1 +1,11 @@
 <h1>Startsida</h1>
+
+<p>Här kan du välja att konvertera Celsius till Farenheit eller vice versa.</p> 
+
+
+<div>
+  <input type="number" [(ngModel)]="celsius" placeholder="Ange temperatur i Celsius">
+  <p *ngIf="celsius !== null">{{ celsius }} Celsius är {{ convertToFahrenheit() }} Fahrenheit.</p>
+</div>
+  
+  
