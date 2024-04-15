@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AnnatComponent {
 
+  tool: string ="Sax";
+
+  tools: string[] = ["Sax", "Träklubba", "Kniv?", "plåtsax?"];
+
+  toolsImage: string = "assets/images/slide5-1.jpg";
+
 }

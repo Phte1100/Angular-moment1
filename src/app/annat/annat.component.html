@@ -1,8 +1,15 @@
 <h1>Annat</h1>
 
-<picture>
-    <source type="image/avif" srcset="assets/slide5-1.avif">
-    <source type="image/webp" srcset="assets/slide5-1.webp">
-    <img src="assets/slide5-1.jpg" alt="Beskrivande text om bilden">
-</picture>
+<img [src]="toolsImage" alt="bild på verktyg">
   
+<p>Att ha tillgång till bra verktyg är viktigt för alla typer av arbete. Bra verktyg gör jobbet enklare, snabbare och säkrare. De kan också hjälpa till att göra resultatet bättre, oavsett om det handlar om att bygga något, reparera eller skapa konst. Det är som att ha en bra vän som alltid är där för att ge en hjälpande hand.
+    <br><br>
+Bilden visar verktyg som hittats i min loge. Jag är osäker på vad de har använts till men jag vet att för cirka 100 år sedan så byggde de båtar i logen så kanske har de använts för det ändamålet.</p>
+
+<h2>Verktyg på bilden</h2>
+
+<ul id="tools">
+    @for(tool of tools; track $index) {
+        <li>{{ tool }}</li>
+    }
+</ul>

@@ -1,27 +1,14 @@
-# Moment1
+Om sidan
+Förutom de komponenter som är routade (home.component.html, annat.component.html och about.component.html) så använder jag tre “globala” komponenter:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+Header och Footer: Dessa komponenter används på alla sidor. Header innehåller navigationslänkar som använder RouterLink för att navigera mellan sidor utan att ladda om webbplatsen.
+Calc: Denna komponent används specifikt på startsidan “Home”. Komponenten omvandlar temperaturer mellan Celsius och Fahrenheit, samt längdmått mellan meter och fot. Detta visar hur en komponent kan användas för att hantera specifika uppgifter och sedan lätt integreras på en sida där den behövs.
+Data Binding
+Data binding gör det möjligt att skapa interaktiva applikationer snabbt. Detta möjliggör dynamisk uppdatering av innehållet när användardata ändras.
 
-## Development server
+Annat.Component använder property binding för att dynamiskt visa en bild och en lista över verktyg. Genom att definiera “toolsImage” och “tools” i komponentens klass kan Angular uppdatera vyerna när dessa egenskaper ändras.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Calc.Component demonstrerar two-way binding med “[(ngModel)]”, vilket gör det möjligt för användaren att skriva in ett värde som omedelbart visar konverterade värden. Detta gäller konverteringar mellan temperatur- och längdenheter, vilket är speciellt användbart för funktioner som kräver omedelbar feedback.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Slutsatser
+Jag tycker att detta var en rolig och intressant uppgift. Angular känns otroligt smidigt att använda, speciellt om man arbetar med större projekt. Att skapa och återanvända komponenter underlättar verkligen arbetsprocessen.

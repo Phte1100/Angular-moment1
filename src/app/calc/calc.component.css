@@ -1,0 +1,49 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#temperatur {
+  display: flex;
+  flex-direction: row;
+  width: 445px;
+}
+
+#cels, #far {
+  position: relative;
+  width: 90%;
+  justify-content: center;
+  margin: 5%;
+}
+
+@media screen and (max-width: 570px) {
+  #temperatur {
+    justify-content: center;
+    flex-direction: column;
+    width: auto
+  }
+}
+
+#text, input {
+  font-size: 16px;
+  font-family: "open sans";
+  text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+  p {
+      width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p {
+      width: 90%;
+  }
+}
