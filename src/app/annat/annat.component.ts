@@ -11,8 +11,8 @@ export class AnnatComponent {
 
   tool: string ="Sax";
 
-  tools: string[] = ["Sax", "Träklubba", "Kniv?", "plåtsax?"];
+  tools: string[] = ["Sax", "Träklubba", "Kniv?", "plåtsax?"]; //Array som används för data binding
 
-  toolsImage: string = "assets/images/slide5-1.jpg";
+  toolsImage: string = "assets/images/slide5-1.jpg"; //Bild som används för data binding
 
 }

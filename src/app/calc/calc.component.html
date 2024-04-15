@@ -1,8 +1,8 @@
 <div id="text">Här kan du välja att konvertera celsius till fahrenheit eller vice versa.</div>
 <div id="temperatur">
     <div id="cels">
-      <input type="number" [(ngModel)]="celsius" placeholder="Ange temperatur i &deg;C">
-      <p *ngIf="celsius !== null">{{ celsius }} &deg;C är {{ convertToFahrenheit() }} &deg;F</p>
+      <input type="number" [(ngModel)]="celsius" placeholder="Ange temperatur i &deg;C"> <!--Inputfält för konvertering-->
+      <p *ngIf="celsius !== null">{{ celsius }} &deg;C är {{ convertToFahrenheit() }} &deg;F</p> <!--Output-->
     </div>
     
     <div id="far">

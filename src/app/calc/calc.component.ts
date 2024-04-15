@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-calc',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule], // Importera Forms 
   templateUrl: './calc.component.html',
   styleUrl: './calc.component.css'
 })
@@ -16,6 +16,8 @@ export class CalcComponent {
   meter: number | null = null;
   feet: number | null = null;
 
+
+  // mina metoder för konverteringar
   convertToFahrenheit(): number | null {
     return this.celsius !== null ? (this.celsius * 9 / 5) + 32 : null;
   }
